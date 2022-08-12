@@ -1,0 +1,57 @@
+ <!DOCTYPE Html>
+<Html>
+<head>
+<style>
+#square{
+  border:5px solid black;
+   background-color:red;
+   position:relative;
+  animation-name:supersquare;
+  animation-duration:5s; width:50px;
+  height:50px;
+ animation-timing-function: linear;
+ }@keyframes supersquare{
+   0%{ 
+   background-color:red;
+     top:0px;left:0px;  }
+     25%{
+       background-color:yellow;
+       top:500px;
+       left:0px;
+       width:70px;
+       height:70px;
+     }
+     50%{
+       background-color:green;
+       top:500px;
+       left:600px;
+       height:80px;
+     }
+     75%{
+       background-color:blue;
+       top:0px;
+       left:600px;
+       
+       
+     }
+     100%{
+       background-color:red;
+       top:0px;
+       left:0px;
+     }
+ }
+ #square{
+             transition-property: border-radius;
+             transition-duration: 2s;
+             }
+ 
+           #square:hover{
+             border-radius:40px;
+           }
+  </style>
+</head>
+<body>
+<div id="square">
+</div>
+</body>
+</Html>
